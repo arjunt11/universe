@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkmate News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <a href="index.html"><img id="logo" src="logo.png" alt="universe_news"></a>
+        <ul>
+            <li><a href="entert.html">Entertainment</a></li>
+            <li><a href="index.html">Sports</a></li>
+            <li><a href="index.html">Politics</a></li>
+            <li><a href="index.html">Tech</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h4>Re-releases Will Continue To Dominate Box Office; A Look At What's In Store For Bollywood</h4>
+        <p>'Ranbir Kapoor's Rockstar Turned The Tide' - Joginder Tuteja</p>
+        <img id="article_img" src="article.jpg" alt="">
+        <p>It's a completely new experience to watch your favourite stars return to the big screen, to sing along the
+            songs which you may have heard a million times already. Even when you know the ending of Veer-Zaara, the
+            first scene and the last will still bring tears to your eyes. Theatre chains across India are currently
+            bringing that magic to the big screen. Re-releasing of older Bollywood releases has always been on occasion,
+            for celebration but it has evolved into something new this season. Classics like Gangs of Wasseypur, Veer
+            Zara, Rehna Hai Tere Dil Mein and many more are returning to the big screen this week alone. Some recent
+            anticipated tiles have been Tumbbad, and Laila Majnu gave fans a chance to enjoy the stories they may have
+            missed the first time. With a re-release, the latter also found its massive audience base, despite mixed
+            reviews after the original release. To understand this trend, we got in touch with some of the industry
+            experts and the minds behind the decisions of such re-releases.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit commodi laborum cupiditate suscipit
+            necessitatibus harum distinctio quaerat, consequuntur dolorum odio. Alias quas autem est natus incidunt.
+            Laboriosam, assumenda voluptates! Accusamus voluptatum commodi eius, incidunt aspernatur iusto voluptas quos
+            praesentium consequuntur, in aperiam quas culpa, deserunt magni iste dolorem voluptates at.</p>
+    </div>
+    <div id="bottom-side">
+        <aside>
+            <script>
+                let selec2 = document.querySelector("#content > p:nth-child(6)");
+                function bottom() {
+                    var div = document.createElement("sticky-bottom");
+                    div.className = "sticky-bottom";
+                    div.style.height = "90px";
+                    div.style.margin = "10px";
+                    div.style.width = "728px";
+                    div.style.backgroundColor = "#D3D3D3";
+                    div.style.display = "block";
+                    selec2.after(div);
+                }
+                const x = setTimeout(bottom, 2000);
+                let target = document.querySelector("#content");
+                function header() {
+                    var div = document.createElement("header");
+                    div.className = "sticky-header";
+                    div.style.height = "200px";
+                    div.style.margin = "10px";
+                    div.style.width = "800px";
+                    div.style.backgroundColor = "#D3D3D3";
+                    div.style.display = "block";
+                    div.style.marginLeft = "13em";
+                    target.before(div);
+                }
+                const y = setTimeout(header, 8000);
+            </script>
+        </aside>
+    </div>
+
+
+    <div id="bottom">
+        <h5>Copy Right reserved @2023</h5>
+    </div>
+
+
+</body>
+
+</html>
