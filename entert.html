@@ -19,41 +19,46 @@
         </ul>
     </div>
 
-    <div id="content">
-        <h4>Re-releases Will Continue To Dominate Box Office; A Look At What's In Store For Bollywood</h4>
-        <p>'Ranbir Kapoor's Rockstar Turned The Tide' - Joginder Tuteja</p>
-        <img id="article_img" src="article.jpg" alt="">
-        <p>It's a completely new experience to watch your favourite stars return to the big screen, to sing along the
-            songs which you may have heard a million times already. Even when you know the ending of Veer-Zaara, the
-            first scene and the last will still bring tears to your eyes. Theatre chains across India are currently
-            bringing that magic to the big screen. Re-releasing of older Bollywood releases has always been on occasion,
-            for celebration but it has evolved into something new this season. Classics like Gangs of Wasseypur, Veer
-            Zara, Rehna Hai Tere Dil Mein and many more are returning to the big screen this week alone. Some recent
-            anticipated tiles have been Tumbbad, and Laila Majnu gave fans a chance to enjoy the stories they may have
-            missed the first time. With a re-release, the latter also found its massive audience base, despite mixed
-            reviews after the original release. To understand this trend, we got in touch with some of the industry
-            experts and the minds behind the decisions of such re-releases.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit commodi laborum cupiditate suscipit
-            necessitatibus harum distinctio quaerat, consequuntur dolorum odio. Alias quas autem est natus incidunt.
-            Laboriosam, assumenda voluptates! Accusamus voluptatum commodi eius, incidunt aspernatur iusto voluptas quos
-            praesentium consequuntur, in aperiam quas culpa, deserunt magni iste dolorem voluptates at.</p>
+    <div>
+        <a
+            href="https://in.mashable.com/entertainment/81464/the-lord-of-the-rings-the-rings-of-power-cast-on-the-return-of-sauron-in-season-2">
+            <img class="head-img1" src="card3.jpg" alt="card1">
+            <a>
     </div>
+
+    <div id="card-container">
+        <div class="card">
+            <a
+                href="https://in.mashable.com/entertainment/81744/aditya-chopra-karan-johar-farah-khan-believe-aryan-khan-is-next-big-thing-offer-to-direct-his-debut">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <img class="card-img" src="card1.jpg" alt="card1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, molestiae.</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://in.mashable.com/life/72315/this-tactile-sticker-could-help-your-mental-health">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <img class="card-img" src="card2.jpg" alt="card1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, molestiae.</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a
+                href="https://in.mashable.com/entertainment/81464/the-lord-of-the-rings-the-rings-of-power-cast-on-the-return-of-sauron-in-season-2">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <img class="card-img" src="card3.jpg" alt="card1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, molestiae.</p>
+                <a>
+        </div>
+    </div>
+
+
+
     <div id="bottom-side">
         <script>
-            let selec2 = document.querySelector("#content > p:nth-child(6)");
-            function bottom() {
-                var div = document.createElement("sticky-bottom");
-                div.className = "sticky-bottom";
-                div.style.height = "90px";
-                div.style.margin = "10px";
-                div.style.width = "728px";
-                div.style.backgroundColor = "#D3D3D3";
-                div.style.display = "block";
-                selec2.after(div);
-            }
-            const x = setTimeout(bottom, 2000);
-            let target = document.querySelector("#content");
+            let target = document.querySelector("body > div:nth-child(2) > a:nth-child(1) > img");
             function header() {
                 var div = document.createElement("header");
                 div.className = "sticky-header";
@@ -63,9 +68,9 @@
                 div.style.backgroundColor = "#D3D3D3";
                 div.style.display = "block";
                 div.style.marginLeft = "13em";
-                target.before(div);
+                target.after(div);
             }
-            const y = setTimeout(header, 8000);
+            const y = setTimeout(header, 6000);
         </script>
     </div>
 
