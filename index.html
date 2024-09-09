@@ -105,21 +105,7 @@
 
     <script>
 
-        const y = setTimeout(header, 8000);
-        let target = document.querySelector("body > div:nth-child(2) > a:nth-child(1) > img");
-            function header() {
-                var div = document.createElement("header");
-                div.className = "sticky-header";
-                div.style.height = "200px";
-                div.style.margin = "10px";
-                div.style.width = "800px";
-                div.style.backgroundColor = "#D3D3D3";
-                div.style.display = "block";
-                div.style.marginLeft = "13em";
-                target.after(div);
-            }
-            const z = setTimeout(header, 6000);
-
+        let selc1 = document.querySelector("#bottom");
         function bottom() {
             var div = document.createElement("sticky-bottom");
             div.className = "sticky-bottom";
