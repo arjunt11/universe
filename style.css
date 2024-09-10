@@ -40,12 +40,13 @@ a {
 #card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 20px;
+    row-gap: 5px;
 }
 
 .card {
-    height: 390px;
+    height: auto;
     width: 300px;
     background-color: #e7e4e4;
     margin: 10px;
@@ -85,4 +86,7 @@ a {
 .head-img1{
     height: 400px;
     width: 100%;
+}
+.heading{
+    padding: 4px;
 }
