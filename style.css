@@ -37,26 +37,95 @@ a {
     font-size: large;
 }
 
-#card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
-    row-gap: 5px;
-}
-
-.card {
-    height: auto;
-    width: 300px;
-    background-color: #e7e4e4;
-    margin: 10px;
+.featured-container {
+    width: 100%;
+    position: relative;
+    text-align: center;
     padding: 10px;
 }
+.featured-img {
+    width: 100%;
+    height: 60%;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.featured-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.featured-title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.featured-description {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    padding: 20px;
+}
+
+
+.card-link {
+    display: block;
+    text-decoration: none; 
+}
+
+
+.card {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
 
 .card-img {
-    height: 250px;
     width: 100%;
-    object-fit: cover;
+    height: 250px;
+    
+}
+
+
+.card-content {
+    padding: 20px;
+}
+
+
+.card-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.card-headline {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #666;
 }
 
 #bottom {
@@ -67,13 +136,6 @@ a {
     bottom: 0;
     width: 100%;
 }
-
-#article_img{
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    width:800px;
-}
 #content{
     position: relative;
     margin-left: 13rem;
@@ -81,12 +143,4 @@ a {
     flex-wrap: wrap;
     height: max-content;
     max-width: 800px;
-}
-
-.head-img1{
-    height: 400px;
-    width: 100%;
-}
-.heading{
-    padding: 4px;
 }
