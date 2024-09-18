@@ -152,8 +152,10 @@ a {
 }
 
 .news-section {
-    display: flex;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    padding: 10px;
     background-color: #f4f4f4; 
 }
 
